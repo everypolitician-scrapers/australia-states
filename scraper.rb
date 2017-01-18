@@ -24,5 +24,5 @@ member_of_house = 'Q6814428' # member of the Australian Senate
 wanted = EveryPolitician::Wikidata.sparql(query % member_of_house)
 raise 'No ids' if wanted.empty?
 
-#data = Wikidata::Areas.new(ids: wanted).data
-#ScraperWiki.save_sqlite(%i(id), data)
+# data = Wikidata::Areas.new(ids: wanted).data
+# ScraperWiki.save_sqlite(%i(id), data)
