@@ -11,11 +11,11 @@ require 'wikidata/fetcher'
 # P768: electoral district
 
 query = <<QUERY
-  SELECT DISTINCT ?state
+  SELECT DISTINCT ?item
   WHERE
   {
-  	?item ps:P39 wd:%s .
-    ?item pq:P768 ?state .
+  	?person ps:P39 wd:%s .
+    ?person pq:P768 ?item .
   }
 QUERY
 
